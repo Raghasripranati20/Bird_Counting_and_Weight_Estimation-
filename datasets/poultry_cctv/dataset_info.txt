@@ -1,0 +1,10 @@
+Dataset Name: Public Poultry CCTV Video
+Source Type: Publicly available surveillance-style video
+Camera Setup: Fixed overhead camera
+Environment: Indoor poultry farm
+Purpose: Academic and evaluation use only
+
+Note:
+No ground-truth bird weights are available. This project therefore
+implements a relative weight index and documents the calibration
+required to convert it into grams.
