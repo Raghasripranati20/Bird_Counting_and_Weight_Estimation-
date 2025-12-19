@@ -1,0 +1,25 @@
+{
+  "note": "This is a SAMPLE response format as required by the assessment. Actual values are generated at runtime when the pipeline is executed.",
+  "counts": [
+    { "time": 0, "count": 12 },
+    { "time": 1, "count": 14 },
+    { "time": 2, "count": 13 },
+    { "time": 3, "count": 15 }
+  ],
+  "tracks_sample": [
+    { "track_id": 1, "weight_index": 0.62 },
+    { "track_id": 2, "weight_index": 0.71 },
+    { "track_id": 3, "weight_index": 0.68 }
+  ],
+  "weight_estimates": {
+    "unit": "relative_index",
+    "per_bird": {
+      "1": { "weight_index": 0.62, "confidence": 0.88 },
+      "2": { "weight_index": 0.71, "confidence": 0.91 },
+      "3": { "weight_index": 0.68, "confidence": 0.89 }
+    }
+  },
+  "artifacts": {
+    "annotated_video": "outputs/annotated_video.mp4"
+  }
+}
