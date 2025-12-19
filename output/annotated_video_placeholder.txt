@@ -1,0 +1,2 @@
+Annotated video is generated at runtime by the pipeline.
+Excluded from repository to keep it lightweight.
