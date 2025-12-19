@@ -1,10 +1,41 @@
-Dataset Name: Public Poultry CCTV Video
-Source Type: Publicly available surveillance-style video
-Camera Setup: Fixed overhead camera
-Environment: Indoor poultry farm
-Purpose: Academic and evaluation use only
+Dataset Name:
+Poultry CCTV Video Sample
 
-Note:
-No ground-truth bird weights are available. This project therefore
-implements a relative weight index and documents the calibration
-required to convert it into grams.
+Source:
+Publicly available CCTV footage downloaded from YouTube.
+(Used strictly for academic and evaluation purposes.)
+
+Original Source Link:
+https://www.youtube.com/watch?v=_-5m9Qk7-68
+
+Data Type:
+Video (.mp4)
+
+Description:
+This dataset consists of a short CCTV-style video capturing poultry birds
+moving freely inside a controlled farm environment. The footage shows multiple
+birds entering and exiting the frame with varying motion patterns and partial
+occlusions.
+
+Usage in Project:
+The video is used as input to the Bird Counting and Weight Estimation pipeline.
+It is processed frame-by-frame to:
+- Detect poultry birds using a deep learning-based object detector
+- Track individual birds across frames using a multi-object tracking algorithm
+- Count birds present over time
+- Estimate relative weight indices based on bounding box area and motion cues
+
+Preprocessing:
+- Video resized to 640x360 resolution
+- Frame rate preserved from original source
+- No manual annotations were applied to the raw video
+
+Ethical and Licensing Notes:
+The video is publicly accessible and contains no personal or sensitive data.
+It is used only for demonstration and evaluation of computer vision algorithms.
+All rights remain with the original content creator.
+
+Limitations:
+- No ground-truth labels are available
+- Weight estimation is relative, not absolute
+
